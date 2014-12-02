@@ -6,10 +6,10 @@
 	</div>
 </div>
 
-<div class="row">
-	
-	<div class="large-6 large-centered columns cta-box">
-		
+<div class="row cta-box">
+
+	<div class="large-6 large-centered columns">
+
 		<h3 class="cta-header">Measure your Awareness</h3>
 		<p class="button secondary">&rarr; Take the AQ Test</p>
 
@@ -19,21 +19,23 @@
 
 <div class="row">
 	<div class="large-4 columns">
-		<img src="http://placehold.it/400x300&text=[img]"/>
-		<h4>This is a content section.</h4>
-		<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+		<img src="img/the-machine-ui.jpg"/>
+		<h4 class="blue">How we help... for FREE</h4>
+		<p>Sign up now and receive a free Awareness Expansion session!</p>
+		<p class="button">Sign up</p>
 	</div>
 
 	<div class="large-4 columns">
-		<img src="http://placehold.it/400x300&text=[img]"/>
-		<h4>This is a content section.</h4>
-		<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+		<img src="img/dr-speece.jpg"/>
+		<h4 class="blue">What is an AQ Test?</h4>
+		<p>You've heard of IQ, right? It's just like that but instead of measuring your Intelligence, we want to measure your Awareness.</p>
+		<p class="button">Read the FAQ</p>
 	</div>
 
 	<div class="large-4 columns">
-		<img src="http://placehold.it/400x300&text=[img]"/>
-		<h4>This is a content section.</h4>
-		<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+		<img src="img/the-machine.jpg"/>
+		<h4 class="blue">Awareness Expansion</h4>
+		<p>Becoming more aware has advanced. The age old practice of meditation has been upgraded to safe, neurological  bypassing to enhance the mind, body and soul. </p>
 	</div>
 
 </div>

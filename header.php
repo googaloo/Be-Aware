@@ -13,10 +13,11 @@
 	</div>
 	<div class="large-9 columns">
 		<ul class="right button-group">
-			<li><a href="#" class="button">Link 1</a></li>
-			<li><a href="#" class="button">Link 2</a></li>
-			<li><a href="#" class="button">Link 3</a></li>
-			<li><a href="#" class="button">Link 4</a></li>
+			<li><a href="/" class="button">home</a></li>
+			<li><a href="test.php" class="button">take the test</a></li>
+			<li><a href="signup.php" class="button">sign up for FREE</a></li>
+			<li><a href="faq.php" class="button">faq</a></li>
+			<li><a href="contact.php" class="button">contact us</a></li>
 		</ul>
 	</div>
 </div>

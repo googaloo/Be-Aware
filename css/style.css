@@ -1,7 +1,22 @@
+.main-container {
+
+    /*border-left: solid #CCC 2px;
+    border-right: solid #CCC 2px;
+    border-bottom: solid #CCC 2px;*/
+
+}
+
+.blue {
+
+    color: #27aae1;
+
+}
+
 .cta-box {
 
 	text-align: center;
-	
+    margin-bottom: 35px;
+
 }
 
 .cta-header {
