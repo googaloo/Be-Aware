@@ -7,26 +7,16 @@
 </head>
 <body>
 
-<div class="container">
-
-	<div class="row">
-		
-		<nav class="masthead large-12 large-centered">
-			
-			<ul>
-				
-				<li>Home</li>
-				<li>Sign up for FREE</li>
-				<li>FAQ</li>
-
-			</ul>
-
-		</nav>
-
+<div class="row">
+	<div class="large-3 columns">
+		<h1><img src="img/logo.png"/></h1>
 	</div>
-
-	<div class="row">
-
-		<div class="large-12 large-centered columns">
-
-			<h1>Header</h1>
+	<div class="large-9 columns">
+		<ul class="right button-group">
+			<li><a href="#" class="button">Link 1</a></li>
+			<li><a href="#" class="button">Link 2</a></li>
+			<li><a href="#" class="button">Link 3</a></li>
+			<li><a href="#" class="button">Link 4</a></li>
+		</ul>
+	</div>
+</div>
