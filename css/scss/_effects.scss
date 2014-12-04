@@ -1,0 +1,77 @@
+.twitch {
+
+	color: #FFF;
+	-webkit-animation: color-twitch 8s infinite;
+	-moz-animation: color-twitch 8s infinite;
+	-o-animation: color-twitch 8s infinite;
+	animation: color-twitch 8s infinite;
+
+}
+
+@-webkit-keyframes color-twitch {
+
+	0% { color: #FFF; }
+	15% { color: #FFF; }
+	16% { color: darkred; }
+	18% { color: #FFF; }
+	74% { color: #FFF; }
+	75% { color: #AAA; }
+	80% { color: #FFF; }
+	85% { color: #FFF; }
+	86% { color: darkgreen; }
+	88% { color: orange; }
+	90% { color: #FFF; }
+	100% { color: #FFF; }
+
+}
+
+@-moz-keyframes color-twitch {
+
+	0% { color: #FFF; }
+	15% { color: #FFF; }
+	16% { color: darkred; }
+	18% { color: #FFF; }
+	74% { color: #FFF; }
+	75% { color: #AAA; }
+	80% { color: #FFF; }
+	85% { color: #FFF; }
+	86% { color: darkgreen; }
+	88% { color: orange; }
+	90% { color: #FFF; }
+	100% { color: #FFF; }
+
+}
+
+@-o-keyframes color-twitch {
+
+	0% { color: #FFF; }
+	15% { color: #FFF; }
+	16% { color: darkred; }
+	18% { color: #FFF; }
+	74% { color: #FFF; }
+	75% { color: #AAA; }
+	80% { color: #FFF; }
+	85% { color: #FFF; }
+	86% { color: darkgreen; }
+	88% { color: orange; }
+	90% { color: #FFF; }
+	100% { color: #FFF; }
+
+}
+
+@keyframes color-twitch {
+
+	0% { color: #FFF; }
+	15% { color: #FFF; }
+	16% { color: darkred; }
+	18% { color: #FFF; }
+	74% { color: #FFF; }
+	75% { color: #AAA; }
+	80% { color: #FFF; }
+	85% { color: #FFF; }
+	86% { color: darkgreen; }
+	88% { color: orange; }
+	90% { color: #FFF; }
+	100% { color: #FFF; }
+
+}

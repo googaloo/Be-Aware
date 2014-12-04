@@ -1,26 +1,269 @@
-.main-container {
-
-    /*border-left: solid #CCC 2px;
-    border-right: solid #CCC 2px;
-    border-bottom: solid #CCC 2px;*/
-
+body {
+  font-size: 16px;
 }
 
-.blue {
+h1 {
+  font-size: 2.5em;
+}
 
-    color: #27aae1;
+h2 {
+  font-size: 1.5em;
+}
 
+h3 {
+  font-size: 1em;
+}
+
+h1 {
+  color: #ff9722;
+}
+
+h2, h3, h4 {
+  color: #27aae1;
+}
+
+.logo {
+  margin-top: 10px;
+}
+
+.logo-header {
+  text-indent: -9999px;
+  line-height: 1px;
+}
+
+.image-descr {
+  font-size: 0.75em;
+  color: #797979;
+}
+
+.sidebar {
+  margin-top: 25px;
+}
+
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 .cta-box {
-
-	text-align: center;
-    margin-bottom: 35px;
-
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 .cta-header {
+  color: #ff9722;
+}
 
-	color: #ff9722;
+.twitch {
+  color: #FFF;
+  -webkit-animation: color-twitch 8s infinite;
+  -moz-animation: color-twitch 8s infinite;
+  -o-animation: color-twitch 8s infinite;
+  animation: color-twitch 8s infinite;
+}
 
+@-webkit-keyframes color-twitch {
+  0% {
+    color: #FFF;
+  }
+
+  15% {
+    color: #FFF;
+  }
+
+  16% {
+    color: darkred;
+  }
+
+  18% {
+    color: #FFF;
+  }
+
+  74% {
+    color: #FFF;
+  }
+
+  75% {
+    color: #AAA;
+  }
+
+  80% {
+    color: #FFF;
+  }
+
+  85% {
+    color: #FFF;
+  }
+
+  86% {
+    color: darkgreen;
+  }
+
+  88% {
+    color: orange;
+  }
+
+  90% {
+    color: #FFF;
+  }
+
+  100% {
+    color: #FFF;
+  }
+}
+
+@-moz-keyframes color-twitch {
+  0% {
+    color: #FFF;
+  }
+
+  15% {
+    color: #FFF;
+  }
+
+  16% {
+    color: darkred;
+  }
+
+  18% {
+    color: #FFF;
+  }
+
+  74% {
+    color: #FFF;
+  }
+
+  75% {
+    color: #AAA;
+  }
+
+  80% {
+    color: #FFF;
+  }
+
+  85% {
+    color: #FFF;
+  }
+
+  86% {
+    color: darkgreen;
+  }
+
+  88% {
+    color: orange;
+  }
+
+  90% {
+    color: #FFF;
+  }
+
+  100% {
+    color: #FFF;
+  }
+}
+
+@-o-keyframes color-twitch {
+  0% {
+    color: #FFF;
+  }
+
+  15% {
+    color: #FFF;
+  }
+
+  16% {
+    color: darkred;
+  }
+
+  18% {
+    color: #FFF;
+  }
+
+  74% {
+    color: #FFF;
+  }
+
+  75% {
+    color: #AAA;
+  }
+
+  80% {
+    color: #FFF;
+  }
+
+  85% {
+    color: #FFF;
+  }
+
+  86% {
+    color: darkgreen;
+  }
+
+  88% {
+    color: orange;
+  }
+
+  90% {
+    color: #FFF;
+  }
+
+  100% {
+    color: #FFF;
+  }
+}
+
+@keyframes color-twitch {
+  0% {
+    color: #FFF;
+  }
+
+  15% {
+    color: #FFF;
+  }
+
+  16% {
+    color: darkred;
+  }
+
+  18% {
+    color: #FFF;
+  }
+
+  74% {
+    color: #FFF;
+  }
+
+  75% {
+    color: #AAA;
+  }
+
+  80% {
+    color: #FFF;
+  }
+
+  85% {
+    color: #FFF;
+  }
+
+  86% {
+    color: darkgreen;
+  }
+
+  88% {
+    color: orange;
+  }
+
+  90% {
+    color: #FFF;
+  }
+
+  100% {
+    color: #FFF;
+  }
 }
