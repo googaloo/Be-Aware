@@ -6,8 +6,7 @@ $(document).ready(function() {
 		var email = $('.contact-email').val();
 		var message = $('.contact-message').val();
 
-		var data = { name: name, email:email, message:message };
-		console.log(data);
+		var data = { name:name, email:email, message:message };
 
 		if ( name !== '' || email !== '' || message !== '' ) {
 
@@ -39,7 +38,15 @@ function handleSubmission(response) {
 
 	if ( data.status == 'success' ) {
 
-		$('.contact-container').html('Thanks for contacting us. We\'ll contact you very soon...');
+		$('.contact-container').html('<h2 style="margin-top: 200px;">Thanks for contacting us. We\'ll contact you very soon...</h2>');
+
+	} else if ( data.status == 'fail' ) {
+
+		$('.contact-container').html('<h2 style="margin-top: 200px;">Uh oh. Something went wrong. Please try again later.</h2>');
+
+	} else {
+
+		console.log('Something else went wrong...');
 
 	}
 
