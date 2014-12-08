@@ -13,7 +13,7 @@
 		<p>Do you want to go through life asleep? Of course not. You want to experience life to it's fullest and not miss a single, blessed thing. Our cutting-edge, neurological semi-invasive technology, along with our revolutionary Awareness Treatment Sessions (ATS) will help spark your brain to new levels of awareness and change your reality forever.</p>
 
 		<h2>What are the <i>Awareness Treatment Sessions</i> (ATS)?</h2>
-		<p>Come and find out! Nothing more to be said.</p> 
+		<p>Come and find out! Nothing more to be said.</p>
 		<p>But first, <a href="test.php">take the test</a>.</p>
 
 		<h2>What are some steps I can take now to start become <i>Aware</i>?</h2>
@@ -30,8 +30,8 @@
 	<div class="large-3 columns">
 
 		<div class="sidebar">
-			
-			<a href="http://theindex.tv"><img src="img/the-old-machine.jpg"></a>
+
+			<a target="_blank" href="http://theindex.tv"><img class="old-machine" src="img/the-old-machine.jpg"><img class="roll-warning visuallyhidden" src="img/do-not-take-this-test.jpg"></a>
 			<p class="image-descr">Fun fact: Take a peek at an early protoype!</p>
 
 		</div>
@@ -39,5 +39,36 @@
 	</div>
 
 </div>
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+
+		var noTestFired = false;
+
+		$('.old-machine').on('mouseover.beaware', function(e) {
+
+			if ( noTestFired == false ) {
+
+				$('.old-machine').attr('src', 'img/do-not-take-this-test.jpg');
+				noTestFired = true;
+
+			} else {
+
+				$('.old-machine').attr('src', 'img/the-old-machine.jpg');
+
+			}
+
+		});
+
+		$('.old-machine').on('mouseout.beaware', function(e) {
+
+			$('.old-machine').attr('src', 'img/the-old-machine.jpg');
+
+		});
+
+	});
+
+</script>
 
 <?php include 'footer.php'; ?>
