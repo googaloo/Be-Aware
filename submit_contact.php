@@ -31,6 +31,11 @@ $conn->close();
 
 $data['status'] = 'success';
 
-//$response = htmlspecialchars($data)
+// Setup for email notification to my email
+$msg = "Email: " . $data['email'] . "\r\n";
+$msg .= "Message: \r\n";
+$msg .= $data['message'];
+
+mail('rustin.l.odom@gmail.com', 'BeAware Contact Form Submitted', $msg);
 
 echo json_encode($data);
