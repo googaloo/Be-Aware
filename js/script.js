@@ -12,12 +12,12 @@ $(document).ready(function() {
 
 			e.preventDefault();
 
-		$.ajax({
+			$.ajax({
 
-			url: 'submit_contact.php',
-			type: 'POST',
-			data: data,
-			success: handleSubmission
+				url: 'submit_contact.php',
+				type: 'POST',
+				data: data,
+				success: handleContactSubmission
 
 		});
 
@@ -30,9 +30,53 @@ $(document).ready(function() {
 
 	});
 
+	$('.signup-form').on('submit.beaware', function(e) {
+
+		e.preventDefault();
+
+		var fname = $('.signup-fname').val();
+		var lname = $('.signup-lname').val
+		var loyal = '';
+		$.each($('.signup-loyal'), function(index, item) {
+
+			if ( $(item).prop('checked') ) {
+
+				loyal = $(item).val();
+
+			}
+
+		});
+		var difname = $('.signup-difname').val();
+		var email = $('.signup-email').val();
+		var why = $('.signup-why').val();
+
+		var data = { fname:fname, lname:lname, loyal:loyal, difname:difname, email:email, why:why };
+
+		if ( fname !== '' || email !== '' || why !== '' ) {
+
+			e.preventDefault();
+
+			$.ajax({
+
+				url: 'submit_signup.php',
+				type: 'POST',
+				data: data,
+				success: handleSignupSubmission
+
+			});
+
+		} else {
+
+			console.log('nope!');
+			return false;
+
+		}
+
+	});
+
 });
 
-function handleSubmission(response) {
+function handleContactSubmission(response) {
 
 	var data = JSON.parse(response);
 
@@ -43,6 +87,26 @@ function handleSubmission(response) {
 	} else if ( data.status == 'fail' ) {
 
 		$('.contact-container').html('<h2 style="margin-top: 200px;">Uh oh. Something went wrong. Please try again later.</h2>');
+
+	} else {
+
+		console.log('Something else went wrong...');
+
+	}
+
+}
+
+function handleSignupSubmission(response) {
+
+	var data = JSON.parse(response);
+
+	if ( data.status == 'success' ) {
+
+		$('.signup-container').html('<h2 style="margin-top: 200px;">Thanks for signing up! We\'ll contact you very soon...</h2>');
+
+	} else if ( data.status == 'fail' ) {
+
+		$('.signup-container').html('<h2 style="margin-top: 200px;">Uh oh. Something went wrong. Please try again later.</h2>');
 
 	} else {
 

@@ -5,7 +5,7 @@
 	<div class="large-9 columns contact-container">
 		
 		<h1>Contact us</h1>
-		<p>We'd love to hear from you! <span class="twitch">Join us.</span></p>
+		<p>We'd love to hear from you!</p>
 
 		<form method="POST" class="contact-form" action="submit_contact.php">
 			
@@ -29,7 +29,7 @@
 
 			<label for="message" class="visuallyhidden">Your Message</label>
 			<textarea id="message" name="message" placeholder="Your Message" class="contact-message" class="contact-message" required></textarea>
-
+			<p><img src="img/twitch-join-us.gif"></p>
 			<input type="submit" class="button contact-button" value="Say hi!">
 
 		</form>
