@@ -36,3 +36,53 @@
 	font-size: 0.75em;
 
 }
+
+.aq-question {
+
+	//font-size: 1.5em;
+	color: $orange;
+
+}
+
+.radio-label {
+
+	margin-left: 15px;
+
+}
+
+.shake {
+
+	-webkit-animation: shakeSideways 100ms 1;
+
+}
+
+@-webkit-keyframes shakeSideways {
+
+	0% { margin-left: 0; }
+	25% { margin-left: 25px; }
+	50% { margin-left: 0; }
+	75% { margin-left: 15px; }
+	100% { margin-left: 0; }
+
+}
+
+.unstable1 {
+
+	-webkit-animation: unstable1 5s infinite;
+
+}
+
+@-webkit-keyframes unstable1 {
+
+	0% {}
+	75% {font-size: 1em; color: $orange;}
+	76% {font-size: 0.8em; color: $gray;}
+	77% {margin-left: 0;}
+	78% {font-size: 1em;}
+	80% {color: $orange;}
+	81% {margin-left: 0;}
+	82% {margin-left: 20px;}
+	83% {margin-left: 0;}
+	100% {}
+
+}

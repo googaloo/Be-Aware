@@ -35,9 +35,13 @@ $conn->close();
 $data['status'] = 'success';
 
 // Setup for email notification to my email
-$msg = "Email: " . $data['email'] . "\r\n";
+$msg = "Email: " . $email . "\r\n";
+$msg .= "First Name: " . $fname . "\r\n";
+$msg .= "Last Name: " . $lname . "\r\n";
+$msg .= "Different Name: " . $difname . "\r\n";
+$msg .= "Loyal: " . $loyal . "\r\n\r\n";
 $msg .= "Message: \r\n";
-$msg .= $data['message'];
+$msg .= $why;
 
 mail('rustin.l.odom@gmail.com', 'BeAware Signup Form Submitted', $msg);
 

@@ -115,3 +115,23 @@ function handleSignupSubmission(response) {
 	}
 
 }
+
+// AQ TEST ///////////////////
+// Set up change back
+$('.change-back').on('click', function(e) {
+
+	e.preventDefault();
+
+	$('#' + switchback).removeClass('shake');
+
+	var switchback = $(this).data('switchback');
+
+	$('#' + switchback).addClass('shake');
+
+	setTimeout(function(){
+
+		$('#' + switchback).removeClass('shake');
+
+	}, 150);
+
+});
