@@ -74,9 +74,9 @@
 
                     <p class="aq-question">How often have you witnessed strange changes in your day to day life?</p>
 
-                    <label for="07-01aq"><input type="radio" name="07aq" id="07-01aq" value="c-wipe" CHECKED><span class="radio-label">Never</span></label>
-                    <label for="07-02aq"><input type="radio" name="07aq" id="07-02aq" value="candidate"><span class="radio-label">Sometimes</span></label>
-                    <label for="07-03aq"><input type="radio" name="07aq" id="07-03aq" value="candidate"><span class="radio-label">Often</span></label>
+                    <label class="trig" for="07-01aq"><input type="radio" name="07aq" id="07-01aq" value="c-wipe"><span class="radio-label">Never</span></label>
+                    <label class="trig" for="07-02aq"><input type="radio" name="07aq" id="07-02aq" value="candidate"><span class="radio-label">Sometimes</span></label>
+                    <label class="trig" for="07-03aq"><input type="radio" name="07aq" id="07-03aq" value="candidate"><span class="radio-label">Often</span></label>
 
                 </li>
                 <li>
@@ -110,5 +110,39 @@
     </div>
 
 </div>
+
+<div class="h-im position-twitch">
+    
+    <img src="img/hacktivist-im-header.png">
+    <div class="h-messages">
+
+<!--         <div class="hack-msg">
+
+            <h3>Reality</h3>
+            <p>This is message</p>
+
+        </div>
+
+        <div class="hack-msg">
+
+            <h3>Reality</h3>
+            <p>This is message</p>
+
+        </div>
+
+        <div class="hack-msg">
+
+            <h3>Reality</h3>
+            <p>This is a much longer message but you know what that's all about biotch</p>
+
+        </div> -->
+
+    </div>
+
+</div>
+<div class="cs-message"></div>
+
+<script type="text/javascript" src="js/test.js"></script>
+<script type="text/javascript" src="js/typed.js"></script>
 
 <?php include 'footer.php'; ?>

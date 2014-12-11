@@ -75,3 +75,65 @@
 	100% { color: #FFF; }
 
 }
+
+.position-twitch {
+
+	-webkit-animation: ptwitch 6s infinite;
+
+}
+
+@-webkit-keyframes ptwitch {
+
+	0% { right: 35px; }
+	2% { right: 10px; }
+	3% { right: 50px; }
+	5% { right: 35px; }
+	100% { right: 35px; }
+
+}
+
+.h-im {
+
+	position: fixed;
+	bottom: 35px;
+	right: 35px;
+	width: 230px;
+	height: 380px;
+	display: none;
+	background: url('../img/hacktivist-IM-bg.jpg');
+	border: 5px solid $gray;
+	//-webkit-animation: 
+
+}
+
+.h-im img {
+
+	margin-bottom: 15px;
+
+}
+
+.hack-msg {
+
+	margin-left: 20px;
+	margin-right: 20px;
+
+}
+
+.hack-msg h3 {
+
+	color: #d84700;
+	margin-bottom: 0;
+	font-size: 1em;
+
+}
+
+.hack-msg p {
+
+	font-size: 0.9em;
+	margin-top: 0;
+
+}
+
+.typed-cursor{
+    display: none;
+}

@@ -52,7 +52,20 @@
 
 .shake {
 
+	animation: shakeSideways 100ms 1;
 	-webkit-animation: shakeSideways 100ms 1;
+	-o-animation: shakeSideways 100ms 1;
+	-moz-animation: shakeSideways 100ms 1;
+
+}
+
+@keyframes shakeSideways {
+
+	0% { margin-left: 0; }
+	25% { margin-left: 25px; }
+	50% { margin-left: 0; }
+	75% { margin-left: 15px; }
+	100% { margin-left: 0; }
 
 }
 
@@ -66,13 +79,81 @@
 
 }
 
+@-moz-keyframes shakeSideways {
+
+	0% { margin-left: 0; }
+	25% { margin-left: 25px; }
+	50% { margin-left: 0; }
+	75% { margin-left: 15px; }
+	100% { margin-left: 0; }
+
+}
+
+@-o-keyframes shakeSideways {
+
+	0% { margin-left: 0; }
+	25% { margin-left: 25px; }
+	50% { margin-left: 0; }
+	75% { margin-left: 15px; }
+	100% { margin-left: 0; }
+
+}
+
 .unstable1 {
 
+	animation: unstable1 5s infinite;
 	-webkit-animation: unstable1 5s infinite;
+	-moz-animation: unstable1 5s infinite;
+	-o-animation: unstable1 5s infinite;
+
+}
+
+@keyframes unstable1 {
+
+	0% {}
+	75% {font-size: 1em; color: $orange;}
+	76% {font-size: 0.8em; color: $gray;}
+	77% {margin-left: 0;}
+	78% {font-size: 1em;}
+	80% {color: $orange;}
+	81% {margin-left: 0;}
+	82% {margin-left: 20px;}
+	83% {margin-left: 0;}
+	100% {}
 
 }
 
 @-webkit-keyframes unstable1 {
+
+	0% {}
+	75% {font-size: 1em; color: $orange;}
+	76% {font-size: 0.8em; color: $gray;}
+	77% {margin-left: 0;}
+	78% {font-size: 1em;}
+	80% {color: $orange;}
+	81% {margin-left: 0;}
+	82% {margin-left: 20px;}
+	83% {margin-left: 0;}
+	100% {}
+
+}
+
+@-moz-keyframes unstable1 {
+
+	0% {}
+	75% {font-size: 1em; color: $orange;}
+	76% {font-size: 0.8em; color: $gray;}
+	77% {margin-left: 0;}
+	78% {font-size: 1em;}
+	80% {color: $orange;}
+	81% {margin-left: 0;}
+	82% {margin-left: 20px;}
+	83% {margin-left: 0;}
+	100% {}
+
+}
+
+@-o-keyframes unstable1 {
 
 	0% {}
 	75% {font-size: 1em; color: $orange;}
