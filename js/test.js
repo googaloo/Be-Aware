@@ -15,7 +15,7 @@
 	var csMessage1 = new (function() {
 
 		this.init = csInit,
-		this.message1 = 'Hello! We’re experiencing some technical difficulty!',
+		this.message1 = 'Hello! We\'re experiencing some technical difficulty!',
 		this.message2 = 'Please finish the survey and ignore any strange messages you may receive.',
 		this.message3 = 'Thank you!',
 		this.numMessages = 3;
@@ -42,9 +42,7 @@
 			im += '<div class="hack-msg">';
 			im += '<h3>rE4LI7y</h3>';
 			im += '<p class="' + messageClass + '"></p>';
-			im += '</div>';
-
-			
+			im += '</div>';			
 
 		} else if ( type == 'cs' ) {
 
@@ -54,8 +52,6 @@
 			im += '<h3>Jan:</h3>';
 			im += '<p class="' + messageClass + '"></p>';
 			im += '</div>';
-
-			csMessage1.msgNum++;
 
 		}
 
@@ -89,9 +85,13 @@
 		}, timeDelay);
 
 		if ( type == 'hacker' ) {
+
 			hackerMessage.msgNum++;
+
 		} else if ( type == 'cs' ) {
-			csMessage.msgNum++;
+
+			csMessage1.msgNum++;
+
 		}
 
 	}
@@ -127,13 +127,53 @@
 
 			}
 
+		} else if ( type == 'cs' ) {
+
+			switch(csMessage1.msgNum) {
+
+				case 2:
+					sendMessage('cs', csMessage1.message2, 3000, 0);
+					break;
+
+				case 3:
+					sendMessage('cs', csMessage1.message3, 5000, 50);
+					break;
+
+				case 4:
+					endMessage1();
+					break;
+
+			}
+
 		}
 
 	}
 
 	function csInit() {
 
-		alert('oh snap!');
+		$('.cs-im').fadeIn();
+		$('.h-im').html('<img src="img/hacktivist-IM-distort.jpg">');
+		$('.h-im').removeClass('position-twitch');
+		$('.h-im').addClass('twitch-alot');
+		setTimeout(function() {
+
+			$('.h-im').fadeOut(1000);
+
+		}, 1500);
+
+		sendMessage('cs', csMessage1.message1, 500, 0);
+
+	}
+
+	function endMessage1() {
+
+		setTimeout(function() {
+
+			$('.cs-im').fadeOut();
+
+		}, 3000);
+		
+		console.log('done');
 
 	}
 

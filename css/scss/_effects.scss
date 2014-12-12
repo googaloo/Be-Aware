@@ -76,6 +76,63 @@
 
 }
 
+.twitch-alot {
+
+	-webkit-animation: twith-alot 10ms infinite;
+	-moz-animation: twith-alot 10ms infinite;
+	-o-animation: twith-alot 10ms infinite;
+	animation: twith-alot 10ms infinite;
+
+}
+
+@keyframes twith-alot {
+
+	0% { left: 0 }
+	25% { left: 20px; }
+	36% { left: 0; }
+	58% { right: 0; }
+	77% { right: 30px; }
+	88% { right: 0 }
+	100% { left: 0; }
+
+}
+
+@-webkit-keyframes twith-alot {
+
+	0% { left: 0 }
+	25% { left: 20px; }
+	36% { left: 0; }
+	58% { right: 0; }
+	77% { right: 30px; }
+	88% { right: 0 }
+	100% { left: 0; }
+
+}
+
+@-moz-keyframes twith-alot {
+
+	0% { left: 0 }
+	25% { left: 20px; }
+	36% { left: 0; }
+	58% { right: 0; }
+	77% { right: 30px; }
+	88% { right: 0 }
+	100% { left: 0; }
+
+}
+
+@-o-keyframes twith-alot {
+
+	0% { left: 0 }
+	25% { left: 20px; }
+	36% { left: 0; }
+	58% { right: 0; }
+	77% { right: 30px; }
+	88% { right: 0 }
+	100% { left: 0; }
+
+}
+
 .position-twitch {
 
 	-webkit-animation: ptwitch 6s infinite;
@@ -102,7 +159,6 @@
 	display: none;
 	background: url('../img/hacktivist-IM-bg.jpg');
 	border: 5px solid $gray;
-	//-webkit-animation: 
 
 }
 
@@ -136,4 +192,45 @@
 
 .typed-cursor{
     display: none;
+}
+
+.cs-im {
+
+	position: fixed;
+	top: 135px;
+	left: 200px;
+	width: 230px;
+	height: 380px;
+	display: none;
+	background: #FFF;
+	border: 5px solid $blue;
+
+}
+
+.cs-im img {
+
+	margin-bottom: 15px;
+	border-bottom: 2px solid $blue;
+
+}
+
+.cs-im h3 {
+
+	font-size: 1em;
+	margin-bottom: 0;
+
+}
+
+.cs-im p {
+
+	font-size: 0.9em;
+	margin-top: 0;
+
+}
+
+.cs-msg {
+
+	margin-left: 20px;
+	margin-right: 20px;
+
 }
