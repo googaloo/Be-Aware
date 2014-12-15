@@ -1,5 +1,7 @@
 (function() {
 
+	var messageInit = false;
+
 	var hackerMessage = new (function() {
 
 		this.init = hackerInit,
@@ -23,30 +25,55 @@
 
 	});
 
+	var csMessage2 = new (function() {
+
+		this.init = csInit2,
+		this.message1 = 'Actually...',
+		this.message2 = 'Let me go ahead and submit this form for you.',
+		this.message3 = 'See you soon!',
+		this.numMessages = 3;
+		this.msgNum = 1;
+
+	});
+
 	// Saving minds
 	$('.trig').on('click.betrayers', function(e) {
 
-		e.preventDefault();
-		hackerMessage.init();
+		if ( !messageInit && !localStorage.getItem('testTaken') ) {
+
+			e.preventDefault();
+			hackerMessage.init();
+			messageInit = true;
+
+		}
 
 	});
 
 	function sendMessage(type, newMessage, timeDelay, typeSpeed) {
 
 		var im = '';
+		var messageClass = '';
 
 		if ( type == 'hacker' ) {
 
-			var messageClass = 'hmsg' + hackerMessage.msgNum;
+			messageClass = 'hmsg' + hackerMessage.msgNum;
 
 			im += '<div class="hack-msg">';
 			im += '<h3>rE4LI7y</h3>';
 			im += '<p class="' + messageClass + '"></p>';
 			im += '</div>';			
 
-		} else if ( type == 'cs' ) {
+		} else if ( type == 'cs' || type == 'cs2' ) {
 
-			var messageClass = 'cs-msg' + csMessage1.msgNum;
+			if ( type == 'cs' ) {
+
+				messageClass = 'cs-msg' + csMessage1.msgNum;
+
+			} else if ( type == 'cs2' ) {
+
+				messageClass = 'cs-msg' + csMessage2.msgNum;
+
+			}
 
 			im += '<div class="cs-msg">';
 			im += '<h3>Jan:</h3>';
@@ -61,7 +88,7 @@
 
 				$('.h-messages').append(im);
 
-			} else if ( type == 'cs' ) {
+			} else if ( type == 'cs' || type == 'cs2' ) {
 
 				$('.cs-messages').append(im);
 
@@ -92,12 +119,17 @@
 
 			csMessage1.msgNum++;
 
+		} else if ( type == 'cs2' ) {
+
+			csMessage2.msgNum++;
+
 		}
 
 	}
 
 	function hackerInit() {
 
+		localStorage.setItem('testTaken', 'true');
 		$('.h-im').slideDown(250);
 		sendMessage('hacker', hackerMessage.message1, 1000, 100);
 
@@ -145,6 +177,24 @@
 
 			}
 
+		} else if ( type == 'cs2' ) {
+
+			switch(csMessage2.msgNum) {
+
+				case 2:
+					sendMessage('cs2', csMessage2.message2, 2000, 0);
+					break;
+
+				case 3:
+					sendMessage('cs2', csMessage2.message3, 2000, 0);
+					break;
+
+				case 4:
+					endMessage2();
+					break;	
+
+			}
+
 		}
 
 	}
@@ -165,15 +215,41 @@
 
 	}
 
+	function csInit2() {
+
+		$('.cs-messages').empty();
+
+		$('.cs-im').fadeIn();
+
+		sendMessage('cs2', csMessage2.message1, 500, 0);
+
+	}
+
 	function endMessage1() {
 
 		setTimeout(function() {
 
 			$('.cs-im').fadeOut();
 
+			setTimeout(csMessage2.init, 2000);
+
 		}, 3000);
 		
-		console.log('done');
+	}
+
+	function endMessage2() {
+
+		setTimeout(function() {
+
+			$('.cs-im').fadeOut();
+
+			setTimeout(function() {
+
+				$('.test-form').submit();
+
+			}, 2000);
+
+		}, 2500);
 
 	}
 

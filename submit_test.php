@@ -1,3 +1,3 @@
 <?php
 
-echo $_POST['02aq'];
+echo 'candidate<br><a href="index.php">&larr; Go back</a>';

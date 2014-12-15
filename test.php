@@ -7,7 +7,7 @@
         <h1>Awareness Test</h1>
         <h2>Take the test and see how aware you really are!</h2>
 
-        <form action="submit_test.php" method="POST">
+        <form action="submit_test.php" method="POST" class="test-form">
 
             <ol>
 
