@@ -22,14 +22,14 @@
 		<img src="img/the-machine-ui.jpg"/>
 		<h4>How we help... for FREE</h4>
 		<p>Sign up now and receive a free Awareness Expansion session!</p>
-		<p class="button">Sign up</p>
+		<a href="signup.php"><p class="button">Sign up</p></a>
 	</div>
 
 	<div class="large-4 columns">
 		<img src="img/dr-speece.jpg"/>
 		<h4>What is an AQ Test?</h4>
 		<p>You've heard of IQ, right? It's just like that but instead of measuring your Intelligence, we want to measure your Awareness.</p>
-		<p class="button">Read the FAQ</p>
+		<a href="faq.php"><p class="button">Read the FAQ</p></a>
 	</div>
 
 	<div class="large-4 columns">
